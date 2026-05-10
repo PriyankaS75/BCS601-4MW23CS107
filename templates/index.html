@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse String Web App</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color:#f2f2f2;
+            margin:40px;
+        }
+
+        h1{
+            color:darkblue;
+            font-size:50px;
+        }
+
+        .form-box{
+            background:white;
+            width:400px;
+            padding:25px;
+            border-radius:10px;
+        }
+
+        input[type=text]{
+            width:100%;
+            height:40px;
+            margin-top:10px;
+            margin-bottom:20px;
+            font-size:18px;
+        }
+
+        button{
+            width:100%;
+            height:45px;
+            background:darkblue;
+            color:white;
+            border:none;
+            font-size:20px;
+        }
+
+        table{
+            margin-top:40px;
+            width:700px;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th, td{
+            padding:15px;
+            font-size:22px;
+        }
+
+        th{
+            background:#e6e6e6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Reverse String Web App</h1>
+
+    <div class="form-box">
+
+        <form method="POST">
+
+            <label>Enter String:</label>
+
+            <input type="text" name="text" required>
+
+            <button type="submit">
+                Reverse String
+            </button>
+
+        </form>
+
+    </div>
+cd 
+    {% if reversed_string %}
+
+    <table>
+
+        <tr>
+            <th>Original String</th>
+            <th>Reversed String</th>
+        </tr>
+
+        <tr>
+            <td>{{ original }}</td>
+            <td>{{ reversed_string }}</td>
+        </tr>
+
+    </table>
+
+    {% endif %}
+
+</body>
+</html>
